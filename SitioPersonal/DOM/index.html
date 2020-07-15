@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accediendo al DOM</title>
+</head>
+<body>
+    <p id="intro">Introduccion al DOM (Document Object Model)</p>
+    <p id="change">este datos es modifica con una funcion de JavaScript</p>
+    <button onclick="cambiar()">Cambiar el codigo </button>
+    <button id="evn">Event handlers</button>
+</body>
+    <script>
+        document.getElementById("intro").innerHTML = "Aqui estoy cambiando el contenido del parrafo"
+    function cambiar(){
+        document.getElementById("change").innerHTML = "ya cambie gracias a una funcion llamada change"
+
+    }
+    // event handlers
+    document.getElementById("evn").onclick = function(){
+        //document.write("El usuario utilizo el boton event");
+        alert('Bienvenidos a mi sitio web');
+    }
+
+    </script>
+
+</html>
